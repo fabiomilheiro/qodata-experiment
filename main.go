@@ -14,6 +14,8 @@ func main() {
 	// Sample data
 	todos = append(todos, Todo{ID: "1", Title: "Sample Todo item", IsDone: false})
 
+	log.Println("Some log here: %s", 1)
+
 	// Route Handlers
 	router.HandleFunc("/todos", GetTodos).Methods("GET")
 	router.HandleFunc("/todos/{id}", GetTodo).Methods("GET")
