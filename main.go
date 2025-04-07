@@ -12,7 +12,7 @@ func main() {
 	router := mux.NewRouter()
 
 	// Sample data
-	todos = append(todos, Todo{ID: "1", Title: "Sample Todo", IsDone: false})
+	todos = append(todos, Todo{ID: "1", Title: "Sample Todo item", IsDone: false})
 
 	// Route Handlers
 	router.HandleFunc("/todos", GetTodos).Methods("GET")
